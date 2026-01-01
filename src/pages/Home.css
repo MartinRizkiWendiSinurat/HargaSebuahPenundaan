@@ -1,0 +1,30 @@
+.home {
+  min-height: 100vh;
+  background-color: #141414;
+}
+
+/* General section setup */
+section {
+  position: relative;
+  z-index: 1;
+}
+
+/* Trending */
+#trending {
+  background-color: #141414;
+}
+
+/* Film Rekomendasi */
+#film-rekomendasi {
+  background-color: #141414;
+}
+
+/* Featured Poster */
+#film {
+  background-color: #0a0a0a;
+}
+
+/* Tentang */
+#tentang {
+  background-color: #141414;
+}
