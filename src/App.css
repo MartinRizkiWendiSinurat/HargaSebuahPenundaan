@@ -1,6 +1,6 @@
 .App {
   min-height: 100vh;
-  background-color: #141414;
+  background-color: #000;
 }
 
 /* Global utilities */
@@ -10,29 +10,55 @@
   padding: 0 4%;
 }
 
-.section {
-  padding: 50px 0;
+.text-center {
+  text-align: center;
 }
 
-.section-title {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 20px;
+/* Button styles */
+.btn {
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-primary {
+  background: #e50914;
   color: white;
+}
+
+.btn-primary:hover {
+  background: #f40612;
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 /* Loading state */
-.loading {
+.loading-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 400px;
-  color: white;
+  min-height: 100vh;
+  gap: 20px;
 }
 
-/* Error state */
-.error {
-  text-align: center;
-  padding: 50px;
-  color: #e50914;
+.loading-text {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
 }

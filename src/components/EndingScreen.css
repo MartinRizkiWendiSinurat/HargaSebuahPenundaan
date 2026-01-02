@@ -1,0 +1,306 @@
+.ending-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #000000, #1a0000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 30;
+  padding: 20px;
+  overflow-y: auto;
+  animation: fadeIn 1s ease-out;
+}
+
+.ending-container {
+  max-width: 800px;
+  width: 100%;
+  padding: 40px;
+}
+
+/* Header */
+.ending-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.ending-icon {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 30px;
+  border: 4px solid;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  animation: scaleIn 0.5s ease-out 0.5s backwards;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.ending-title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 20px;
+  animation: slideUp 0.6s ease-out 0.7s backwards;
+}
+
+.ending-message {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  animation: slideUp 0.6s ease-out 0.9s backwards;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Stats */
+.ending-stats {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: fadeIn 0.6s ease-out 1.1s backwards;
+}
+
+.stats-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stat-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #e50914;
+}
+
+/* Journey Summary */
+.journey-summary {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: fadeIn 0.6s ease-out 1.3s backwards;
+}
+
+.journey-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.journey-path {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.journey-step {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #e50914, #b20710);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: white;
+}
+
+.journey-arrow {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 1.5rem;
+}
+
+.journey-text {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+}
+
+/* Actions */
+.ending-actions {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  animation: fadeIn 0.6s ease-out 1.5s backwards;
+}
+
+.ending-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.ending-button.primary {
+  background: #e50914;
+  color: white;
+}
+
+.ending-button.primary:hover {
+  background: #f40612;
+  transform: scale(1.05);
+}
+
+.ending-button.secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 2px solid white;
+}
+
+.ending-button.secondary:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.ending-button.tertiary {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.ending-button.tertiary:hover {
+  color: white;
+  border-color: white;
+}
+
+/* Credits */
+.ending-credits {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  animation: fadeIn 0.6s ease-out 1.7s backwards;
+}
+
+.ending-credits p {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 5px 0;
+}
+
+.credits-small {
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ending-container {
+    padding: 20px;
+  }
+
+  .ending-icon {
+    width: 100px;
+    height: 100px;
+    font-size: 3rem;
+  }
+
+  .ending-title {
+    font-size: 2rem;
+  }
+
+  .ending-message {
+    font-size: 1.1rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ending-actions {
+    flex-direction: column;
+  }
+
+  .ending-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .ending-title {
+    font-size: 1.5rem;
+  }
+
+  .ending-message {
+    font-size: 1rem;
+  }
+
+  .ending-stats,
+  .journey-summary {
+    padding: 20px;
+  }
+
+  .journey-path {
+    gap: 10px;
+  }
+
+  .journey-step {
+    width: 35px;
+    height: 35px;
+  }
+
+  .journey-arrow {
+    font-size: 1.2rem;
+  }
+}

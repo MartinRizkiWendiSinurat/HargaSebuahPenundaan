@@ -11,7 +11,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #141414;
+  background-color: #000;
   color: white;
   overflow-x: hidden;
 }
@@ -21,7 +21,6 @@ code {
     monospace;
 }
 
-/* Smooth scroll */
 html {
   scroll-behavior: smooth;
 }
@@ -36,10 +35,25 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #555;
+  background: #333;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #888;
+  background: #555;
+}
+
+/* Loading animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loader {
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  border-top: 4px solid #e50914;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
 }

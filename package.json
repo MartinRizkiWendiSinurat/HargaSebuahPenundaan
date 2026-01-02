@@ -1,7 +1,7 @@
 {
-  "name": "movie-streaming-app",
+  "name": "interactive-video-app",
   "version": "1.0.0",
-  "description": "Movie streaming application with Google Drive integration",
+  "description": "Interactive video experience - Harga Sebuah Penundaan",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",

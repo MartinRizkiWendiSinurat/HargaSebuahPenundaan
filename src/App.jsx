@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import VideoPlayerPage from "./pages/VideoPlayerPage";
+import InteractiveVideoPlayer from "./pages/InteractiveVideoPlayer";
 import "./App.css";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/watch/:id" element={<VideoPlayerPage />} />
+          <Route path="/play" element={<InteractiveVideoPlayer />} />
         </Routes>
       </div>
     </Router>
