@@ -18,7 +18,6 @@ atau terjebak dalam lingkaran penundaan?`,
 // Highlighted Poster (Single)
 const highlightedPoster = {
   id: 7,
-  title: "Harga Sebuah Penundaan",
   poster: "/images/10.png"
 };
 
@@ -64,6 +63,24 @@ const movieCategories = {
       id: 8,
       title: "Harga Sebuah Penundaan 2",
       thumbnail: "/images/11.png"
+    },
+    {
+      id: 9,
+      title: "Harga Sebuah Penundaan",
+      thumbnail: "/images/13.png"
+    },{
+      id: 10,
+      title: "Harga Sebuah Penundaan",
+      thumbnail: "/images/14.png"
+    },{
+      id: 11,
+      title: "Harga Sebuah Penundaan",
+      thumbnail: "/images/15.png"
+    },
+    {
+      id: 12,
+      title: "Harga Sebuah Penundaan",
+      thumbnail: "/images/17.png"
     },
   ]
 };
@@ -269,7 +286,7 @@ function Home() {
           <h2 className="synopsis-title">Tentang Film</h2>
           <div className="synopsis-content">
             <p>
-              Harga Sebuah Penundaan adalah film drama interaktif yang mengangkat potret realistis kehidupan mahasiswa tingkat akhir. Cerita berpusat pada Andi, seorang mahasiswa semester 8 di Institut Teknologi Nasional (ITENAS), yang mulai merasa waktu tidak lagi berpihak kepadanya. Segalanya bermula saat Andi menghadiri wisuda seorang sahabat—momen yang seharusnya membahagiakan, namun justru menjadi tamparan keras. Peringatan dari teman-teman dan dosennya menyadarkan Andi bahwa kebiasaan menunda telah menempatkannya di persimpangan hidup yang krusial.
+              Harga Sebuah Penundaan adalah film drama interaktif yang mengangkat potret realistis kehidupan mahasiswa tingkat akhir. Cerita berpusat pada Andi, seorang mahasiswa semester 8 di salah satu kampus di bandung , yang mulai merasa waktu tidak lagi berpihak kepadanya. Segalanya bermula saat Andi menghadiri wisuda seorang sahabat—momen yang seharusnya membahagiakan, namun justru menjadi tamparan keras. Peringatan dari teman-teman dan dosennya menyadarkan Andi bahwa kebiasaan menunda telah menempatkannya di persimpangan hidup yang krusial.
             </p>
             <p>
               Dalam kesehariannya, Andi dihadapkan pada berbagai godaan yang terasa dekat dan nyata: kenyamanan bermain game hingga larut malam, ajakan pesta yang menjauhkannya dari tanggung jawab akademik, serta godaan judi online yang menjanjikan jalan pintas namun berujung kehancuran. Setiap pilihan yang ia ambil membawa konsekuensi, perlahan membentuk masa depan yang berbeda.
@@ -308,26 +325,26 @@ function Home() {
           <div className="steps-grid">
             <div className="step-card">
               <div className="step-number">1</div>
-              <h3>Tonton Video</h3>
-              <p>Nikmati cerita yang sedang berlangsung dengan penuh perhatian</p>
+              <h3>TEKAN MULAI PERJALANAN</h3>
+              <p>tekan settings lalu pilih kualitas video yang paling bagus Rekomendasi pakai laptop atau PC</p>
             </div>
 
             <div className="step-card">
               <div className="step-number">2</div>
-              <h3>Buat Keputusan</h3>
-              <p>Video akan berhenti dan menampilkan pilihan. Pilih dengan bijak!</p>
+              <h3>Menikmati Vidio</h3>
+              <p>saksikan dan nikmati cerita yang sedang kamu tonton</p>
             </div>
 
             <div className="step-card">
               <div className="step-number">3</div>
               <h3>Lihat Konsekuensi</h3>
-              <p>Setiap pilihan membawa cerita ke arah yang berbeda</p>
+              <p>Setiap pilihan memberikan konsekuensi yang berbeda</p>
             </div>
 
             <div className="step-card">
               <div className="step-number">4</div>
-              <h3>Raih Ending</h3>
-              <p>Ada {totalEndings} ending berbeda yang bisa kamu capai!</p>
+              <h3>Ending</h3>
+              <p>Ada {totalEndings} ending berbeda yang bisa kamu pilih</p>
             </div>
           </div>
         </div>
@@ -388,7 +405,7 @@ function Home() {
           </div>
 
           <div className="footer-bottom">
-            <p>&copy; {currentYear} Harga Sebuah Penundaan - Kelompok 5. All rights reserved.</p>
+            <p>&copy; {currentYear} Harga Sebuah Penundaan - Kelompok 5</p>
           </div>
         </div>
       </footer>

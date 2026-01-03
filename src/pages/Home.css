@@ -257,8 +257,8 @@
 .highlight-poster-wrapper {
   position: relative;
   display: inline-block;
-  max-width: 450px;
-  width: 100%;
+  max-width: 600px;
+  width: 250%;
   margin-bottom: 30px;
 }
 
