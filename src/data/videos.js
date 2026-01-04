@@ -145,8 +145,8 @@ export const interactiveVideos = {
     id: "video5_judi",
     // title: "Ending: Berjudi",
     // description: "Mencoba mencari jalan pintas dengan berjudi berakhir dengan kerugian besar...",
-    //https://drive.google.com/file/d/13i6zfbyjiir4icCqSnX2vY1GNLk-dETK/view?usp=sharing
-    fileId: "13i6zfbyjiir4icCqSnX2vY1GNLk-dETK",
+    //https://drive.google.com/file/d/12rkKxr0Knv58R2XmrRKrrdF2DxZ9MhYF/view?usp=sharing
+    fileId: "12rkKxr0Knv58R2XmrRKrrdF2DxZ9MhYF",
     duration: 300,
     isEnding: true,
     endingType: "bad",
