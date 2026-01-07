@@ -397,7 +397,7 @@ function Home() {
             <div className="footer-section">
               <h4>Informasi</h4>
               <ul>
-                <li>Kelompok 5</li>
+                <li>Kelompok 3</li>
                 <li>Kelas EE</li>
                 <li>Informatika</li>
                 <li>Fakultas Teknologi Industri</li>

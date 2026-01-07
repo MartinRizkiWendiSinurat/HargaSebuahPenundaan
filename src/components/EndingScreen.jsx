@@ -1,7 +1,54 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './EndingScreen.css';
 
 function EndingScreen({ video, onRestart, onBackToHome, videoHistory }) {
+  const [visibleWords, setVisibleWords] = useState(0);
+  const [showMoralMessage, setShowMoralMessage] = useState(false);
+
+  // Pesan ending berdasarkan tipe dan skenario
+  const getEndingMessage = (type) => {
+    // Cek apakah ada custom message dari video object
+    if (video.customEndingMessage) {
+      return video.customEndingMessage;
+    }
+    
+    // Default messages berdasarkan tipe
+    switch (type) {
+      case 'good':
+        return 'Selamat! Pilihanmu membawa Andi ke garis finish yang gemilang. Terimakasih telah memilih untuk tidak menyerah di tengah jalan. Satu gelar sarjana telah berhasil diraih dengan keringat dan air mata. Ini bukan akhir dari perjalanan, tapi awal dari ribuan mimpi baru yang siap untuk dikejar. Masa depan cerah menanti di depan sana.';
+      case 'bad_game':
+        return 'Sayangnya, cerita Andi berakhir tragis. Kamu terlalu sibuk menaikkan level karakter game sampai lupa menaikkan level kehidupan nyata. Hari demi hari dihabiskan di depan layar, sementara tugas akhir tertunda dan deadline sidang semakin dekat. Ketika sadar, sudah terlambat. Sidang terlewat, kesempatan lulus hilang. Game over bukan hanya di layar, tapi juga di kehidupan nyata. Masa depan yang penuh harapan kini sirna, tamat sebelum sempat dimulai.';
+      case 'bad_party':
+        return 'Perjalanan Andi berakhir dengan penyesalan mendalam. Pesta demi pesta, hangout demi hangout, kamu dikelilingi teman-teman yang terlihat setia. Mereka ada saat kamu senang, tertawa bersamamu di setiap kesenangan. Tapi ketika hari sidang tiba dan kamu terlambat karena terlalu lelah dari pesta semalam, tidak ada satupun yang peduli. Teman-teman pestamu menghilang saat kamu di-DO dari kampus. Kini kamu tersisa sendirian, tanpa gelar, tanpa masa depan yang jelas, hanya dengan kenangan pesta yang tak berarti.';
+      case 'bad_gambling':
+        return 'Ending yang paling kelam menanti Andi. Judi adalah permainan tanpa pemenang sejati. Setiap taruhan membawa harapan palsu, setiap kemenangan kecil membutakan mata dari kehancuran besar yang menanti. Uang kuliah habis, tabungan ludes, bahkan hutang menumpuk. Tekanan semakin besar hingga akhirnya semuanya runtuh. Sidang tidak pernah terjadi, gelar sarjana tinggal mimpi. Yang tersisa hanya penyesalan, hutang yang menggunung, dan bahkan ancaman hukuman penjara. Judi tidak pernah menjanjikan kemenangan, hanya kehancuran total. Sekarang kamu kehilangan segalanya.';
+      default:
+        return 'Perjalanan Andi telah berakhir. Setiap keputusan yang diambil membawa konsekuensinya masing-masing. Hidup adalah tentang pilihan, dan pilihanmu telah menentukan jalan cerita ini.';
+    }
+  };
+
+  const endingMessage = getEndingMessage(video.endingType);
+  const words = endingMessage.split(' ');
+
+  useEffect(() => {
+    // Mulai animasi pesan moral setelah delay
+    const timer = setTimeout(() => {
+      setShowMoralMessage(true);
+    }, 1500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    if (showMoralMessage && visibleWords < words.length) {
+      const timer = setTimeout(() => {
+        setVisibleWords(prev => prev + 1);
+      }, 200); // Delay antar kata (ms) - diperlambat untuk efek lebih jelas
+
+      return () => clearTimeout(timer);
+    }
+  }, [showMoralMessage, visibleWords, words.length]);
+
   const getEndingIcon = (type) => {
     switch (type) {
       case 'good':
@@ -31,7 +78,7 @@ function EndingScreen({ video, onRestart, onBackToHome, videoHistory }) {
   return (
     <div className="ending-screen">
       <div className="ending-container">
-        {/* Ending Header */}
+        {/* Ending Icon */}
         <div className="ending-header">
           <div 
             className="ending-icon"
@@ -39,42 +86,27 @@ function EndingScreen({ video, onRestart, onBackToHome, videoHistory }) {
           >
             {getEndingIcon(video.endingType)}
           </div>
-          <h1 className="ending-title">{video.title}</h1>
-          <p className="ending-message">{video.endingMessage}</p>
         </div>
 
-        {/* Ending Stats */}
-        {video.endingStats && (
-          <div className="ending-stats">
-            <h3 className="stats-title">{video.endingStats.title}</h3>
-            <div className="stats-grid">
-              {video.endingStats.items.map((item, index) => (
-                <div key={index} className="stat-card">
-                  <div className="stat-label">{item.label}</div>
-                  <div className="stat-value">{item.value}</div>
-                </div>
+        {/* Ending Message - Animasi Kata per Kata */}
+        {showMoralMessage && (
+          <div className="ending-message-container">
+            <div className="ending-message-quote">"</div>
+            <div className="ending-message-text">
+              {words.map((word, index) => (
+                <React.Fragment key={index}>
+                  <span
+                    className={`ending-word ${index < visibleWords ? 'visible' : ''}`}
+                  >
+                    {word}
+                  </span>
+                  {index < words.length - 1 && ' '}
+                </React.Fragment>
               ))}
             </div>
+            <div className="ending-message-quote closing-quote">"</div>
           </div>
         )}
-
-        {/* Journey Summary */}
-        <div className="journey-summary">
-          <h3 className="journey-title">Perjalanan Kamu</h3>
-          <div className="journey-path">
-            {videoHistory.map((videoId, index) => (
-              <React.Fragment key={videoId}>
-                {index > 0 && <div className="journey-arrow">→</div>}
-                <div className="journey-step">
-                  <span className="journey-number">{index + 1}</span>
-                </div>
-              </React.Fragment>
-            ))}
-          </div>
-          <p className="journey-text">
-            Kamu membuat {videoHistory.length - 1} keputusan untuk mencapai ending ini
-          </p>
-        </div>
 
         {/* Actions */}
         <div className="ending-actions">
