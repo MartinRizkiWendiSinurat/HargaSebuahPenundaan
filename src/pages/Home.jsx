@@ -294,8 +294,23 @@ function Home() {
             <p>
               Sebagai film dengan alur non-linear, Harga Sebuah Penundaan memberi kebebasan kepada penonton untuk menentukan keputusan Andi di setiap titik penting. Pilihan-pilihan tersebut akan membawa cerita menuju beragam kemungkinan akhir—mulai dari kelulusan yang penuh perjuangan hingga kegagalan pahit yang sarat penyesalan. Melalui pendekatan interaktif ini, film tidak hanya menyajikan kisah, tetapi juga mengajak penonton berefleksi tentang arti waktu, tanggung jawab, dan harga yang harus dibayar dari setiap penundaan dalam hidup.
             </p>
+            <div className="synopsis-copyright">
+              <p>
+                Seluruh musik yang digunakan dalam film ini merupakan hak cipta milik
+                pencipta masing-masing:
+              </p>
+              <ul>
+                <li>🎵 <strong>Racun</strong> — Cangchuters</li>
+                <li>🎵 <strong>Jalan Ke London</strong> — Cangchuters</li>
+                <li>🎵 <strong>Everything U Are</strong> — Hindia</li>
+              </ul>
+              <p className="copyright-note">
+                Musik digunakan hanya untuk keperluan pendidikan dan non-komersial.
+              </p>
+            </div>
+            {/* <div className="synopsis-details">
             
-            <div className="synopsis-details">
+              
               <div className="detail-item">
                 <h3>Mata Kuliah</h3>
                 <p>Teknik Multimedia</p>
@@ -312,7 +327,7 @@ function Home() {
                 <h3>Durasi</h3>
                 <p>20+ Menit</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -325,26 +340,22 @@ function Home() {
           <div className="steps-grid">
             <div className="step-card">
               <div className="step-number">1</div>
-              <h3>TEKAN MULAI PERJALANAN</h3>
-              <p>tekan settings lalu pilih kualitas video yang paling bagus Rekomendasi pakai laptop atau PC</p>
+              <p>Tekan mulai perjalan ketika masuk cari tombol settings dan atur kualitas video</p>
             </div>
 
             <div className="step-card">
               <div className="step-number">2</div>
-              <h3>Menikmati Vidio</h3>
-              <p>saksikan dan nikmati cerita yang sedang kamu tonton</p>
+              <p>Tekan tombol play dan nikmati film interaktifnya </p>
             </div>
 
             <div className="step-card">
               <div className="step-number">3</div>
-              <h3>Lihat Konsekuensi</h3>
-              <p>Setiap pilihan memberikan konsekuensi yang berbeda</p>
+              <p>Untuk memilih pilihan yang kamu inginkan keluar dan tekan tombol yang tersedia </p>
             </div>
 
             <div className="step-card">
               <div className="step-number">4</div>
-              <h3>Ending</h3>
-              <p>Ada {totalEndings} ending berbeda yang bisa kamu pilih</p>
+              <p>Ada  ending berbeda yang bisa kamu pilih</p>
             </div>
           </div>
         </div>

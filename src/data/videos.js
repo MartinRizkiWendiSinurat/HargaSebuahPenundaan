@@ -1,19 +1,20 @@
 export const interactiveVideos = {
   // ============================================
-  // VIDEO 1 - INTRO (Pilihan Awal)
+  // VIDEO 1 - INTRO (Pilihan Awal) https://drive.google.com/file/d/1wnP243_Ff1RPMCXHAibY9t_7bkAk5bcw/view?usp=sharing
+  //https://drive.google.com/file/d/1wnP243_Ff1RPMCXHAibY9t_7bkAk5bcw/view?usp=drive_link
   // ============================================ 
-  "1rlehP0TOxr_KWPGIX7EzwF0iUjbKjJ2_": {
-    id: "1rlehP0TOxr_KWPGIX7EzwF0iUjbKjJ2_",
+  "1wnP243_Ff1RPMCXHAibY9t_7bkAk5bcw": {
+    id: "1wnP243_Ff1RPMCXHAibY9t_7bkAk5bcw",
     title: "Trailer: Harga Sebuah Penundaan",
     description: "Cuplikan singkat perjalanan interaktif Andi.",
-    fileId: "1rlehP0TOxr_KWPGIX7EzwF0iUjbKjJ2_",
+    fileId: "1wnP243_Ff1RPMCXHAibY9t_7bkAk5bcw",
     isTrailer: true // Penanda bahwa ini trailer
   },
   video1: {
     id: "video1",
     // title: "Intro - Pilihan Hidup",
     // description: "Perjalanan seorang mahasiswa yang harus memilih jalannya",
-    fileId: "1b13XucAawCf1pBPsVg7V0kKa7MNZFH_s", // Intro https://drive.google.com/file/d/1b13XucAawCf1pBPsVg7V0kKa7MNZFH_s/view?usp=sharing
+    fileId: "1wnP243_Ff1RPMCXHAibY9t_7bkAk5bcw", // Intro https://drive.google.com/file/d/1b13XucAawCf1pBPsVg7V0kKa7MNZFH_s/view?usp=sharing
     duration: 180,
     pauseAt: 175,
     decisions: [
@@ -74,10 +75,8 @@ export const interactiveVideos = {
   // ============================================
   video2_lulus: {
     id: "video2_lulus",
-    // title: "Ending: Sukses Lulus",
-    // description: "Kamu berhasil lulus dengan nilai bagus dan mendapat pekerjaan impian!",
-    //https://drive.google.com/file/d/1czByKUWQ24tMDUqv0IllRuEehDd3nx6w/view?usp=sharing
-    fileId: "1czByKUWQ24tMDUqv0IllRuEehDd3nx6w",
+    // https://drive.google.com/file/d/1xgVmNngWPAZFOVPK7LRLNfTq2_0LTqb3/view?usp=sharing
+    fileId: "1xgVmNngWPAZFOVPK7LRLNfTq2_0LTqb3",
     duration: 300,
     isEnding: true,
     endingType: "good",
@@ -99,8 +98,8 @@ export const interactiveVideos = {
     id: "video3_game",
     // title: "Ending: Kecanduan Game",
     // description: "Kamu terlalu asyik main game dan melupakan tanggung jawab...",
-    fileId: "1c4gWJY1EQHnoPjSu58WK3p3QeHt7vtEu",
-    //https://drive.google.com/file/d/1c4gWJY1EQHnoPjSu58WK3p3QeHt7vtEu/view?usp=sharing
+    fileId: "14UysdOKDPd-G0QG1LTCHtF46cdSsB6f8",
+    //https://drive.google.com/file/d/14UysdOKDPd-G0QG1LTCHtF46cdSsB6f8/view?usp=drive_link
     duration: 300,
     isEnding: true,
     endingType: "bad",
@@ -120,10 +119,8 @@ export const interactiveVideos = {
   // ============================================
   video4_pergaulan: {
     id: "video4_pergaulan",
-    //title: "Ending: Pergaulan Bebas",
-    //description: "Terjebak dalam pergaulan yang salah membawamu ke jalan yang keliru...",
-    //https://drive.google.com/file/d/1AqLjwad3eI7hnUoXnCBuQkbFGwVw1KTT/view?usp=sharing
-    fileId: "1AqLjwad3eI7hnUoXnCBuQkbFGwVw1KTT",
+    //https://drive.google.com/file/d/1I04HdLMmD2U2HW8c-iAdQyC9yQ4Slh5U/view?usp=drive_link
+    fileId: "1I04HdLMmD2U2HW8c-iAdQyC9yQ4Slh5U",
     duration: 180,
     isEnding: true,
     endingType: "bad",
@@ -143,9 +140,7 @@ export const interactiveVideos = {
   // ============================================
   video5_judi: {
     id: "video5_judi",
-    // title: "Ending: Berjudi",
-    // description: "Mencoba mencari jalan pintas dengan berjudi berakhir dengan kerugian besar...",
-    //https://drive.google.com/file/d/12rkKxr0Knv58R2XmrRKrrdF2DxZ9MhYF/view?usp=sharing
+    // https://drive.google.com/file/d/12rkKxr0Knv58R2XmrRKrrdF2DxZ9MhYF/view?usp=drive_link
     fileId: "12rkKxr0Knv58R2XmrRKrrdF2DxZ9MhYF",
     duration: 300,
     isEnding: true,
