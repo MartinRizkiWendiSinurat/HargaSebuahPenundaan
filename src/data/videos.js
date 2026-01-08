@@ -3,11 +3,12 @@ export const interactiveVideos = {
   // VIDEO 1 - INTRO (Pilihan Awal) https://drive.google.com/file/d/1wnP243_Ff1RPMCXHAibY9t_7bkAk5bcw/view?usp=sharing
   //https://drive.google.com/file/d/1wnP243_Ff1RPMCXHAibY9t_7bkAk5bcw/view?usp=drive_link
   // ============================================ 
-  "1wnP243_Ff1RPMCXHAibY9t_7bkAk5bcw": {
-    id: "1wnP243_Ff1RPMCXHAibY9t_7bkAk5bcw",
+  //https://drive.google.com/file/d/1rlehP0TOxr_KWPGIX7EzwF0iUjbKjJ2_/view?usp=drive_link
+  "1rlehP0TOxr_KWPGIX7EzwF0iUjbKjJ2_": {
+    id: "1rlehP0TOxr_KWPGIX7EzwF0iUjbKjJ2_",
     title: "Trailer: Harga Sebuah Penundaan",
     description: "Cuplikan singkat perjalanan interaktif Andi.",
-    fileId: "1wnP243_Ff1RPMCXHAibY9t_7bkAk5bcw",
+    fileId: "1rlehP0TOxr_KWPGIX7EzwF0iUjbKjJ2_",
     isTrailer: true // Penanda bahwa ini trailer
   },
   video1: {
