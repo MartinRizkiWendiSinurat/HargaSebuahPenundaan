@@ -142,7 +142,7 @@ function Home() {
               <button onClick={() => scrollToSection("tentang")}>Tentang</button>
             </li>
             <li>
-              <button onClick={() => scrollToSection("how-to-play")}>Cara Bermain</button>
+              <button onClick={() => scrollToSection("how-to-play")}>Cara Menonton</button>
             </li>
           </ul>
         </div>
@@ -335,7 +335,7 @@ function Home() {
       {/* 5. How to Play Section */}
       <section id="how-to-play" className="how-to-play-section">
         <div className="container">
-          <h2 className="section-title">Cara Bermain</h2>
+          <h2 className="section-title">Cara Menonton</h2>
           
           <div className="steps-grid">
             <div className="step-card">
@@ -397,7 +397,7 @@ function Home() {
             <div className="footer-section">
               <h4>Informasi</h4>
               <ul>
-                <li>Kelompok 3</li>
+                <li>Kelompok 5</li>
                 <li>Kelas EE</li>
                 <li>Informatika</li>
                 <li>Fakultas Teknologi Industri</li>
